@@ -1,16 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
 #general-information {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+#general-information .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
 }
 
 #structure {
 
 }
+
+#structure > div{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
 #team {
     padding: 75px 0;
     margin: 0 auto;
 
+}
+
+#team > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #team .section-text{
@@ -69,11 +96,16 @@ body {
     background-size: cover;
     height: 650px;
     padding-top: 50px;
+    position: relative;
 
 }
 
 .quote {
     font-size: 2.5em;
+    line-height: 0.3em;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -110,7 +142,8 @@ h4 {
 
 h5 {
     font-size: 1.2em;
-    line-height: 1em
+    line-height: 1em;
+    margin-bottom: 15px;
 }
 
 .nav-bar {
@@ -119,6 +152,8 @@ h5 {
 }
 
 .nav-bar-ul {
+    display: flex;
+    justify-content: space-evenly;
     width: 1200px;
     margin: 0 auto;
 }
@@ -155,6 +190,7 @@ h5 {
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding: 10px 30px;
 }
 
 .service-box{
@@ -174,6 +210,9 @@ h5 {
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1.9em;
     text-align: center;
     padding: 40px 100px;
@@ -201,5 +240,10 @@ h5 {
     margin: 0 auto;
     padding: 75px 0;
 
+}
+
+.map-frame {
+    height: 375px;
+    width: 60%;
 }
 
